@@ -1,8 +1,33 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import App from "./App";
+import HandleTransactions from "./components/HandleTransactions";
+import Notification from "./components/Notification";
+import { shallow } from "enzyme";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+
+describe("rendering components", () => {
+  it("renders App component without crashing", () => {
+    shallow(<App />);
+  });
+
+  it("renders App component header without crashing", () => {
+    const wrapper = shallow(<App />);
+    const header =  (<h1>Financial Transactions</h1>);
+    expect (wrapper.contains(header).toEqual(true));
+  });
+
+  it("renders notification component without crashing", () => {
+    shallow(<Notification />);
+  it("renders button", () => {
+    const wrapper = mount(<HandleTransactions accounts={}/>);
+    const label = wrapper.find(""). text();
+
+    })
+
+  });
+
+
+
+
+
+})

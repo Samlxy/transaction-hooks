@@ -1,0 +1,17 @@
+.notification {
+    width: 330px;
+    height: 120px;
+    background-color: #fc4c5f;
+    color: #ffffff;
+    padding-left: 20px;
+    margin: 30px auto;
+  }
+  
+  .close-notification {
+    margin-left: 23em;
+    color: #ffffff;
+    font-weight: bold;
+    background-color:#cc3d51;
+    border: 0px;
+    outline: 0px;
+  }

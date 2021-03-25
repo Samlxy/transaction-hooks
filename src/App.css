@@ -1,38 +1,63 @@
-.App {
+h1 { 
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #060d29;
+  height: 400px;
 }
 
-.App-link {
-  color: #61dafb;
+.column {
+  width: 400px;
+  height: 250px;
+  margin: 20px;
+  background-color: #222950;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.account {
+  color: #ffffff;
+}
+
+.circle-one {
+  width: 120px;
+  height: 120px;
+  background: transparent;
+  border: 2px solid #33caa8;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.circle-two {
+  width: 120px;
+  height: 120px;
+  background: transparent;
+  border: 2px solid #ffd85a;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.amount {
+  color: #ffffff;
+  padding-top: 25px;
+}
+
+.send-money {
+  color: #ffffff;
+  background-color: #008dd3;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .row {
+    flex-direction: column;
+    height: 600px;
   }
 }
